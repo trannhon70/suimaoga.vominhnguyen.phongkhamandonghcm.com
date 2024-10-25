@@ -1,0 +1,55 @@
+@media only screen and (max-width: 600px) {
+    .header,
+    .banner,
+    .sick,
+    .information,
+    .complication,
+    .harm,
+    .virus,
+    .infection,
+    .time,
+    .contact,
+    .footer{
+        width: var(--width-100) !important;
+    }
+
+    .sick__container-item,
+    .information__tile,
+    .complication__tile,
+    .harm__tile,
+    .infection__title,
+    .virus__title,
+    .contact__title{
+        font-size: var(--font-size-18) !important;
+    }
+
+    .complication__img img {
+        height: 226px !important;
+    }
+
+    .view {
+        text-align: center !important;
+        height: 226px !important;
+    }
+    .view_button {
+        top: 72% !important;
+    }
+
+    .contact__body{
+        font-size: var(--font-size-14) !important;
+        width: 95% !important;
+    }
+
+    .footer__body-top{
+        height: 60px !important;
+    }
+    .footer__body-top > a{
+        height: 60px !important;
+    }
+    .footer__body-botom{
+        height: 39px !important;
+    }
+    .footer__body-botom> a{
+        height: 39px !important;
+    }
+}
