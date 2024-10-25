@@ -156,7 +156,7 @@
     border: 0px;
 }
 
-.information__thongtin-body > H5 {
+.information__thongtin-bs {
     font-size: var(--font-size-18);
     font-weight: var(--font-weight-700);
     text-align: var(--center);
@@ -207,7 +207,7 @@
     transform: translate(-50%, -50%);
     padding: 10px 20px;
     background-color: #fff;
-    color: #999;
+    color: black;
     border: none;
     cursor: pointer;
     z-index: 1000;

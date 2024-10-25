@@ -132,7 +132,7 @@ $slides = [
                 <div class="information__thongtin-hr">
                     <span></span>
                 </div>
-                <h5>VÕ MINH NGUYỄN</h5>
+                <div class="information__thongtin-bs" >VÕ MINH NGUYỄN</div>
             </div>
         </div>
     </section>
