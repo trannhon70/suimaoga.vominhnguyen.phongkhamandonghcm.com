@@ -312,9 +312,6 @@
     cursor: var(--cursor-pointer);
 }
 
-.time{
-   
-}
 .time__body{
     width: 70%;
     height: auto;
@@ -377,4 +374,13 @@
     height: 70px;
     width: 100%;
     display: var(--display-block);
+}
+
+.sick__body{
+    min-height: 200px;
+}
+
+.sick__body-card {
+    width: 100%; /* Hoặc chiều rộng cố định */
+    height: auto; /* Đảm bảo không thay đổi chiều cao */
 }

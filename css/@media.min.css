@@ -52,4 +52,8 @@
     .footer__body-botom> a{
         height: 39px !important;
     }
+
+    .sick__body{
+        min-height: 330px !important;
+    }
 }
