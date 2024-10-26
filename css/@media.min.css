@@ -63,4 +63,8 @@
         width: 100% !important;
         height: auto !important;
     }
+
+    .sick__body-card {
+        min-height: 330px !important;
+    }
 }

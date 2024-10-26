@@ -380,7 +380,7 @@
 
 .sick__body-card {
     width: 100%; /* Hoặc chiều rộng cố định */
-    height: auto; /* Đảm bảo không thay đổi chiều cao */
+    min-height: 200px; /* Đảm bảo không thay đổi chiều cao */
 }
 
 .treatment a {
