@@ -66,7 +66,7 @@
 
     @media only screen and (max-width: 999px) {
         .modal-content {
-            margin: 15% 8%;
+            margin: 40% 8%;
             width: auto;
             height: auto;
             animation-duration: 1s;

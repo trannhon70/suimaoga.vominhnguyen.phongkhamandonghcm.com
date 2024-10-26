@@ -49,7 +49,7 @@ $slides = [
     </section>
     <section class="banner" >
         <div class="banner__button" >
-            <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en" aria-label="title" class="box">Liên hệ với bác sĩ tại đây</a>
+            <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en" aria-label="title" class="box">tư vấn với bác sĩ tại đây</a>
         </div>
     </section>
     <section class="sick">
