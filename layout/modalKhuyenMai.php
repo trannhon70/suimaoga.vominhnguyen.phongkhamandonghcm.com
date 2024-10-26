@@ -103,31 +103,33 @@
         const span = document.getElementById("closeModalKM");
         const sloseModal = document.getElementById("clickSloseModal");
 
-        setTimeout(function() {
+        function showModal() {
             modal.style.display = "block";
-        }, 10000);
+        }
+
+        function hideModal() {
+            modal.style.display = "none";
+            setTimeout(showModal, 30000); // Hiển thị lại modal sau 30 giây
+        }
+
+        // Hiển thị modal sau 10 giây khi trang tải
+        setTimeout(showModal, 10000);
 
         if (btn) {
-            btn.onclick = function() {
-                modal.style.display = "block";
-            };
+            btn.onclick = showModal;
         }
 
         if (sloseModal) {
-            sloseModal.onclick = function() {
-                modal.style.display = "none";
-            };
+            sloseModal.onclick = hideModal;
         }
 
         if (span) {
-            span.onclick = function() {
-                modal.style.display = "none";
-            };
+            span.onclick = hideModal;
         }
 
         window.onclick = function(event) {
             if (event.target === modal) {
-                modal.style.display = "none";
+                hideModal();
             }
         };
     });

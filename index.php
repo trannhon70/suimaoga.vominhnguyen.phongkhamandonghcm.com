@@ -54,7 +54,7 @@ $slides = [
     </section>
     <section class="sick">
         <div class="sick__container">
-            <div class="sick__container-item">Sùi Màu Gà</div>
+            <div class="sick__container-item sick__container-item-active ">Sùi Màu Gà </div>
             <div class="sick__container-item">Bệnh Lậu</div>
             <div class="sick__container-item">Mụn Rộp</div>
         </div>
@@ -62,7 +62,7 @@ $slides = [
     <section class="sick">
         <div class="sick__body">
             <div class="sick__body-card">
-                Bệnh sùi mào gà là căn bệnh xã hội, lây lan qua hành vi quan hệ tình dục, bản chất là tình trạng tăng sinh của các tế bào biểu bì do lây nhiễm virus HPV (Human Palilama Virus), Virus HPV bao gồm các tuýp 1, 2, 6, 11, 16, 18, 31, 33 và 35. Trong đó bệnh ung thư cổ tử cung ở nữ giới có liên quan tới việc nhiễm HPV tuýp 16 và 18 trong thời gian dài. HPV là một phân tử khá nhỏ với đường kính = 55 nm, thuộc nhóm DNA. Các loại virus HPV được phát hiện có hơn 100 kiểu gen, trong đó có hơn 30 kiểu sẽ lây nhiễm và gây bệnh trên da và niêm mạc của bộ phận sinh dục, và gây ra các loại bệnh. Do bệnh có khả năng lây lan mạnh nên các triệu chứng của bệnh nên được nắm rõ, để không bỏ lỡ thời gian điều trị tốt.
+                <strong>Bệnh sùi mào gà</strong> là căn bệnh xã hội, lây lan qua hành vi quan hệ tình dục, bản chất là tình trạng tăng sinh của các tế bào biểu bì do lây nhiễm virus HPV (Human Palilama Virus), Virus HPV bao gồm các tuýp 1, 2, 6, 11, 16, 18, 31, 33 và 35. Trong đó bệnh ung thư cổ tử cung ở nữ giới có liên quan tới việc nhiễm HPV tuýp 16 và 18 trong thời gian dài. HPV là một phân tử khá nhỏ với đường kính = 55 nm, thuộc nhóm DNA. Các loại virus HPV được phát hiện có hơn 100 kiểu gen, trong đó có hơn 30 kiểu sẽ lây nhiễm và gây bệnh trên da và niêm mạc của bộ phận sinh dục, và gây ra các loại bệnh. Do bệnh có khả năng lây lan mạnh nên các triệu chứng của bệnh nên được nắm rõ, để không bỏ lỡ thời gian điều trị tốt.
             </div>
         </div>
     </section>

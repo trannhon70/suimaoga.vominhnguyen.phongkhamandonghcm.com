@@ -53,6 +53,11 @@
     border: 2px solid var(--color-038291);
 }
 
+.sick__container-item-active {
+    background-color: var(--background-color-038291);
+    color: var(--color-white);
+}
+
 .sick__body,
 .harm__body{
     padding: 0px 10px;
@@ -72,6 +77,10 @@
     font-size: var(--font-size-16);
     font-weight: var(--font-weight-400);
     line-height: 22px;
+}
+
+.sick__body-card > strong {
+    color: var(--color-038291);
 }
 
 .information__tile,
