@@ -47,6 +47,11 @@ $slides = [
     <section class="banner">
         <img loading="lazy" src="<?php echo $local ?>/images/banner/banner.webp" alt="...">
     </section>
+    <section class="banner" >
+        <div class="banner__button" >
+            <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en" aria-label="title" class="box">Liên hệ với bác sĩ tại đây</a>
+        </div>
+    </section>
     <section class="sick">
         <div class="sick__container">
             <div class="sick__container-item">Sùi Màu Gà</div>
@@ -60,6 +65,12 @@ $slides = [
                 Bệnh sùi mào gà là căn bệnh xã hội, lây lan qua hành vi quan hệ tình dục, bản chất là tình trạng tăng sinh của các tế bào biểu bì do lây nhiễm virus HPV (Human Palilama Virus), Virus HPV bao gồm các tuýp 1, 2, 6, 11, 16, 18, 31, 33 và 35. Trong đó bệnh ung thư cổ tử cung ở nữ giới có liên quan tới việc nhiễm HPV tuýp 16 và 18 trong thời gian dài. HPV là một phân tử khá nhỏ với đường kính = 55 nm, thuộc nhóm DNA. Các loại virus HPV được phát hiện có hơn 100 kiểu gen, trong đó có hơn 30 kiểu sẽ lây nhiễm và gây bệnh trên da và niêm mạc của bộ phận sinh dục, và gây ra các loại bệnh. Do bệnh có khả năng lây lan mạnh nên các triệu chứng của bệnh nên được nắm rõ, để không bỏ lỡ thời gian điều trị tốt.
             </div>
         </div>
+    </section>
+
+    <section class="treatment">
+        <a aria-label="chat" href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en" class="expert__chat">
+            <img loading="lazy" src="<?php echo $local ?>/images/icons/chat_dakhoa.gif" alt="...">
+        </a>
     </section>
 
     <section class="information">
@@ -142,7 +153,11 @@ $slides = [
             <img loading="lazy" src="<?php echo $local ?>/images/banner/bac_si1.webp" alt="bác sĩ">
         </div>
     </section>
-
+    <section class="banner" >
+        <div class="banner__button" >
+            <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en" aria-label="title" class="box">đặt lịch khám ngay</a>
+        </div>
+    </section>
     <section class="complication">
         <div class="complication__tile">
             BIỂU HIỆN VÀ BIẾN CHỨNG
@@ -169,6 +184,11 @@ $slides = [
                 <img class="" loading="lazy" src="<?php echo $local ?>/images/banner/sui_mau_ga1.webp" alt="bác sĩ">
             </div>
         </div>
+    </section>
+    <section class="treatment">
+        <a aria-label="chat" href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en" class="expert__chat">
+            <img loading="lazy" src="<?php echo $local ?>/images/icons/chat_dakhoa.gif" alt="...">
+        </a>
     </section>
     <section class="harm">
         <div class="harm__tile">3 TÁC HẠI CỦA SÙI MÀU GÀ</div>
@@ -213,6 +233,7 @@ $slides = [
         <div class="infection__title">CON ĐƯỜNG LÂY NHIỄM </div>
     </section>
 
+
     <section class="infection">
         <div id="slider">
             <div class="slide_show w-100">
@@ -239,6 +260,11 @@ $slides = [
             </div>
         </div>
     </section>
+  <section class="banner" >
+        <div class="banner__button" >
+            <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en" aria-label="title" class="box">liên hệ ngay</a>
+        </div>
+    </section>
 
     <section class="information">
         <div class="information__bacsi">
@@ -251,8 +277,10 @@ $slides = [
         </div>
     </section>
     <section class="time">
-        <div class="time__body">
-            <img width="100%" height="auto" loading="lazy" src="<?php echo $local ?>/images/banner/time.webp" alt="bác sĩ">
+        <div class="ping-wrapper">
+            <div class="ping-border">
+                <img loading="lazy" src="<?php echo $local ?>/images/banner/time.webp" alt="...">
+            </div>
         </div>
     </section>
 

@@ -24,7 +24,8 @@
 .infection,
 .time,
 .contact,
-.footer{
+.footer,
+.treatment{
     width: var(--container);
     margin: var(--margin-auto);
     display: var(--display-block);
@@ -39,17 +40,17 @@
 .sick__container{
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 2px;
     background-color: var(--background-color-white);
     text-align: var(--center);
 }
 
 .sick__container-item{
-    background-color: var(--background-color-038291);
+    background-color: var(--background-color-white);
     font-size: var(--font-size-20);
     font-weight: var(--font-weight-700);
     padding: 10px;
-    color: var(--color-white);
+    color: var(--color-black);
+    border: 2px solid var(--color-038291);
 }
 
 .sick__body,
@@ -312,18 +313,15 @@
     cursor: var(--cursor-pointer);
 }
 
-.time__body{
-    width: 70%;
-    height: auto;
-    display: var(--display-flex);
-    align-items: var(--align-item-center);
-    margin: 0 auto;
+.time{
+    text-align: var(--center);
+    min-height: 115px;
 }
 
-.time__body > img {
-    border: 1px dashed;
-    border-radius: 8px;
-    border-color: var(--background-color-038291);
+.time  img {
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--color-038291); /* Border của thẻ chính */
 }
 
 .contact__body {
@@ -384,3 +382,122 @@
     width: 100%; /* Hoặc chiều rộng cố định */
     height: auto; /* Đảm bảo không thay đổi chiều cao */
 }
+
+.treatment a {
+    display: var(--display-block);
+    box-sizing: border-box;
+    text-align: var(--center);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.treatment img {
+    width: 480px;
+    height: 169px;
+    margin-top: 10px;
+    border: 1px solid var(--color-038291);
+}
+
+.banner__button{
+    display: var(--display-flex);
+    align-items: var(--align-item-center);
+    justify-content: var(--justify-content-center);
+    margin: 10px 0px;
+}
+
+.box {
+    text-transform: capitalize;
+    cursor: pointer;
+    padding: 10px 30px;
+    font-size: var(--font-size-18);
+    display: grid;
+    place-content: center;
+    color: white;
+    text-shadow: 0 1px 0 #000;
+    --border-angle: 0turn;
+    --main-bg: conic-gradient(
+      from var(--border-angle),
+      #213,
+      #112 5%,
+      #112 60%,
+      #213 95%
+    );
+    border: solid 5px transparent;
+    border-radius: 2em;
+    --gradient-border: conic-gradient(
+      from var(--border-angle),
+      transparent 25%,
+      #08f,
+      #f03 99%,
+      transparent
+    );
+    background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
+    background-position: center center;
+    -webkit-animation: bg-spin 3s linear infinite;
+            animation: bg-spin 3s linear infinite;
+  }
+  @-webkit-keyframes bg-spin {
+    to {
+      --border-angle: 1turn;
+    }
+  }
+  @keyframes bg-spin {
+    to {
+      --border-angle: 1turn;
+    }
+  }
+  .box:hover {
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+  }
+  
+  @property --border-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+  }
+
+  /* ping */
+ .ping-wrapper {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    overflow: hidden;
+    min-height: 115px;
+  }
+
+  .ping-border {
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    width: 70%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    margin-top: 11px;
+  }
+
+  .ping-layer {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0); /* Đặt vào giữa và bắt đầu từ kích thước 0 */
+    opacity: 0; /* Bắt đầu không nhìn thấy */
+    pointer-events: none; /* Đảm bảo pseudo-elements không can thiệp vào các tương tác */
+    animation: pingLayer 2s infinite;
+  }
+
+  @keyframes pingLayer {
+    0% {
+      transform: translate(-50%, -50%) scale(0); /* Bắt đầu với kích thước 0 */
+      opacity: 1; /* Bắt đầu với độ mờ 1 */
+    }
+    50% {
+      transform: translate(-50%, -50%) scale(1); /* Mở rộng */
+      opacity: 0; /* Biến mất khi mở rộng */
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(0); /* Quay lại kích thước 0 */
+      opacity: 0; /* Đảm bảo không còn nhìn thấy khi kết thúc */
+    }
+  }
