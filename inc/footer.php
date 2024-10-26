@@ -13,6 +13,7 @@
     </div>
 </footer>
 <?php include_once 'layout/modalKhuyenMai.php' ?>
+<?php include_once 'layout/loading.php' ?>
 
 <script defer src="<?php echo $local ?>/js/slider.min.js"></script>
 <script language="javascript" src="https://npa.zoosnet.net/JS/LsJS.aspx?siteid=NPA46777247&float=1&lng=en"></script>
