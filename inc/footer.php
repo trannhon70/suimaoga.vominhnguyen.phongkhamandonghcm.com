@@ -1,17 +1,7 @@
-<footer class="footer">
-    <img loading="lazy" src="<?php echo $local ?>/images/banner/footer.webp" alt="...">
-    <div class="footer__body">
-        <div class="footer__body-top">
-            <a aria-label="left" href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en"></a>
-            <a aria-label="center" href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en"></a>
-            <a aria-label="right" href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en"></a>
-        </div>
-        <div class="footer__body-botom">
-            <a aria-label="bottom" href="tel:+0968063109"></a>
-        </div>
-    </div>
+<footer id="footer" >
+   
+   
 </footer>
-<!-- <?php include_once 'layout/modalKhuyenMai.php' ?> -->
 <?php include_once 'layout/loading.php' ?>
 
 <script defer src="<?php echo $local ?>/js/slider.min.js"></script>
@@ -80,6 +70,7 @@
     document.addEventListener("DOMContentLoaded", function() {
         const contentPlaceholder = document.getElementById("content-placeholder");
         const bodyPlaceholder = document.getElementById("body-placeholder");
+        const footer = document.getElementById("footer");
 
         const loadContent = () => {
             contentPlaceholder.innerHTML = `
@@ -359,6 +350,25 @@
             observer.unobserve(bodyPlaceholder);
         };
 
+        const loadFooter = () =>{
+            footer.innerHTML= `
+                 <div class="footer" >
+                    <img loading="lazy" src="<?php echo $local ?>/images/banner/footer.webp" alt="...">
+                    <div class="footer__body">
+                        <div class="footer__body-top">
+                            <a aria-label="left" href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en"></a>
+                            <a aria-label="center" href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en"></a>
+                            <a aria-label="right" href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en"></a>
+                        </div>
+                        <div class="footer__body-botom">
+                            <a aria-label="bottom" href="tel:+0968063109"></a>
+                        </div>
+                    </div>
+                </div>
+            `;
+            footer.classList.add("loaded");
+        }
+
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -366,7 +376,7 @@
                     handleShockImages();
                     handlePing();
                     initImageSlider();
-
+                    loadFooter();
                 }
             });
         });
