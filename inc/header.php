@@ -3,8 +3,8 @@ ob_start("ob_gzhandler");
 header("Timing-Allow-Origin: *");
 header("Cache-Control: public, max-age=31536000, must-revalidate");
 
-    $local ='http://localhost/suimaoga.vominhnguyen.phongkhamandonghcm.com'
-    // $local ='https://suimaoga.vominhnguyen.phongkhamandonghcm.com'
+    // $local ='http://localhost/suimaoga.vominhnguyen.phongkhamandonghcm.com'
+    $local ='https://suimaoga.vominhnguyen.phongkhamandonghcm.com'
 ?>
 <!DOCTYPE html>
 <html ⚡ lang="en">
