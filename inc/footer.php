@@ -2,7 +2,8 @@
    
    
 </footer>
-<?php include_once 'layout/loading.php' ?>
+
+<?php include_once 'layout/modalKhuyenMai.php' ?>
 
 <script defer src="<?php echo $local ?>/js/slider.min.js"></script>
 <script language="javascript" src="https://npa.zoosnet.net/JS/LsJS.aspx?siteid=NPA46777247&float=1&lng=en"></script>
@@ -387,29 +388,7 @@
     });
 </script>
 
-<!-- Google tag (gtag.js) -->
-<script>
-  function loadGtagScripts() {
-    // Tải script Google Tag Manager
-    var script = document.createElement('script');
-    script.src = "https://www.googletagmanager.com/gtag/js?id=G-00PYVXZQ5G";
-    script.onload = function () {
-      // Khởi tạo Google Tag Manager sau khi script đã được tải
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-      gtag('config', 'G-00PYVXZQ5G');
-    };
-    document.head.appendChild(script);
-  }
 
-  // Đợi trang tải xong rồi chờ thêm 10 giây trước khi gọi loadGtagScripts
-  window.addEventListener('load', function () {
-    setTimeout(loadGtagScripts, 10000); // 10 giây
-  });
-</script>
 
 </body>
 

@@ -3,8 +3,8 @@ ob_start("ob_gzhandler");
 header("Timing-Allow-Origin: *");
 header("Cache-Control: public, max-age=31536000, must-revalidate");
 
-    // $local ='http://localhost/suimaoga.vominhnguyen.phongkhamandonghcm.com'
-    $local ='https://suimaoga.vominhnguyen.phongkhamandonghcm.com'
+    $local ='http://localhost/suimaoga.vominhnguyen.phongkhamandonghcm.com'
+    // $local ='https://suimaoga.vominhnguyen.phongkhamandonghcm.com'
 ?>
 <!DOCTYPE html>
 <html ⚡ lang="en">
@@ -26,3 +26,14 @@ header("Cache-Control: public, max-age=31536000, must-revalidate");
         <link rel="stylesheet" href="css/index.min.css">
         <link rel="stylesheet" href="css/@media.min.css">
     </noscript>
+
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-00PYVXZQ5G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-00PYVXZQ5G');
+</script>
